@@ -22,12 +22,6 @@ pipeline {
             }
         }
 
-        stage('Publish JUnit Report') {
-            steps {
-                junit 'target/surefire-reports/*.xml'
-            }
-        }
-
         stage('Publish Extent Report') {
             steps {
                 publishHTML([
