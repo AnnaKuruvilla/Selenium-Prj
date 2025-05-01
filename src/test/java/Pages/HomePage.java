@@ -1,10 +1,7 @@
 package Pages;
-
 import com.beust.jcommander.IStringConverter;
 import org.openqa.selenium.By;
-
 import static Tests.Selenium_test.driver;
-
 public class HomePage {
 
     public static String hambur_menu_xpath="//*[@id=\"menuToggle\"]/input" ;
@@ -15,7 +12,6 @@ public class HomePage {
     }
     public static void Click_online_product() throws InterruptedException
     {
-
         Thread.sleep(2000);
         driver.findElement(By.xpath(online_products)).click();
     }
