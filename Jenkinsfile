@@ -22,17 +22,7 @@ pipeline {
             }
         }
 
-        stage('Publish Extent Report') {
-            steps {
-                publishHTML([
-                    reportName: 'Extent Report',
-                    reportDir: 'target/extent-reports', // Adjust if spark.html is located elsewhere
-                    reportFiles: 'spark.html',
-                    keepAll: true,
-                    alwaysLinkToLastBuild: true
-                ])
-            }
-        }
+       
     }
 
     post {
